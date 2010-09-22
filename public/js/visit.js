@@ -24,7 +24,7 @@
   var referrer = (window.decodeURI)?window.decodeURI(document.referrer):document.referrer;
   var landing_page = (window.decodeURI)?window.decodeURI(window.location):window.location;
 
-  if (referrer || referrer.match('\:\/\/'+window.location.host + '[^\w]')) {    
+  if (!referrer || referrer.match('\:\/\/'+window.location.host + '[^\w]')) {    
     referrer = '';
   }
 
