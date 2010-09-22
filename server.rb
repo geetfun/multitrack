@@ -14,7 +14,6 @@ class StatsApp
     else
       NotFound
     end
-
  end
 
 end
