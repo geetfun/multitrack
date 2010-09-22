@@ -22,6 +22,7 @@
 	};
 
   var referrer = (window.decodeURI)?window.decodeURI(document.referrer):document.referrer;
+  var landing_page = (window.decodeURI)?window.decodeURI(window.location):window.location;
 
   if (referrer || referrer.match('\:\/\/'+window.location.host + '[^\w]')) {    
     referrer = '';
@@ -38,7 +39,7 @@
   }
 
   if(!visit) {
-    new Image().src = '/visit/record.gif?a='+ uniq + '&r=' +encodeURIComponent(referrer)+'&'+ today;
+    new Image().src = 'http://multitrack.heroku.com/visit/record.gif?a='+ uniq + '&r=' +encodeURIComponent(referrer)+'&l='+encodeURIComponent(landing_page)+'&'+ today;
   }
 
 	// set return visit cookie, always advance this. 
