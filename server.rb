@@ -9,7 +9,7 @@ class StatsApp
     req = Rack::Request.new(env)
 
     if req.path_info =~ /visit\/record\.gif/
-      Visits.insert(:visitor => req.params['a'], :referrer => req.params['r'], :landing_page => req.params['l'] )
+      Visits.insert(:visitor => req.params['a'], :referrer => req.params['r'], :landing_page => req.params['l'], :created_at => Time.now.utc )
       return Gif
     else
       NotFound
