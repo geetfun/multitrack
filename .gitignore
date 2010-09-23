@@ -1,8 +1,9 @@
-.*.swp
-.*.un\~
+.swp
+.un~
 tags
 .swo
 jferris-*.gemspec
 *.scratch.*
 *.rbc
 .bundle/config
+.bundle

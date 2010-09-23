@@ -1,0 +1,10 @@
+= Installation
+
+  gem install bundler
+  bundler install
+  shotgun
+
+
+= Deployment
+
+  bundle exec heroku create
