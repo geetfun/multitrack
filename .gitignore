@@ -1,5 +1,5 @@
-.*.swp
-.*.un\~
+.swp
+.un~
 tags
 .swo
 jferris-*.gemspec
