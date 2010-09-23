@@ -2,11 +2,13 @@ GEM
   remote: http://rubygems.org/
   remote: http://gems.github.com/
   specs:
+    activerecord (2.3.8)
+      activesupport (= 2.3.8)
+    activesupport (2.3.8)
     json (1.4.6)
     rack (1.2.1)
     rack-contrib (1.0.1)
       rack (>= 0.9.1)
-    sequel (3.15.0)
     shotgun (0.8)
       rack (>= 1.0)
     sinatra (1.0)
@@ -17,10 +19,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord
   json
   rack
   rack-contrib
-  sequel
   shotgun
   sinatra
   sqlite3-ruby

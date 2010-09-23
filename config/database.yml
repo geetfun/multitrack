@@ -1,0 +1,5 @@
+production: 
+  encoding: unicode
+  adapter: sqlite3
+  database: /tmp/multi.db
+

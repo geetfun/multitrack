@@ -1,7 +1,7 @@
 source :gemcutter
 source "http://gems.github.com"
 
-gem "sequel"
+gem "activerecord"
 gem "rack"
 gem "rack-contrib"
 gem "json"
