@@ -8,4 +8,3 @@ class TrackApp
     [200, {'Content-Type' => 'text/javascript', 'Cache-Control' => 'public, maxage=3600'}, [tmpl]]
   end
 
-end

@@ -1,3 +1,32 @@
+= What is this?
+
+MultiTrack solves an issue that will come up sooner or later as your SaaS 
+business is starting to grow. At some point you will spend money on Marketing and
+track your return on investment. To do that, you need to know where your customers
+come from.
+
+Most businesses use Google Analytics for those purposes, for example storing the _umtz 
+cookies from the Google Analytics tracking script with each signup to later analyise things.
+
+However, the issue with this is that you will attribute the full conversion to the last 
+click. For example, if a fresh customer came to you by entering your name in Google does she
+really come from an organic search? How did she find out about your brand? Maybe she has been
+to your website a month ago after she clicked on a banner, and maybe a week ago after seeing
+a article on a blog!
+
+To get good metrics you have to store all visits of a potential new customer with the signup.
+
+This project aims to keep a full log of visits, just set up your own copy on your servers, 
+add http://multitrack.xxx.com/track.js to your homepage and save the contents of the _y cookie
+with each signup. 
+
+
+= Todo
+
+* Allow export API (csv, json)
+* Add realtime(?) dashboard
+* perhaps make tracking cookies more sticky, taking lessons from http://samy.pl/evercookie/
+
 = Installation
 
   gem install bundler
