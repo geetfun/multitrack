@@ -6,11 +6,14 @@ class StatsApp
     req = Rack::Request.new(env)
     params = req.params
 
-    Visit.create(
-      :uid => params['a'], 
-      :referrer => params['r'], 
-      :landing_page => params['l']
-    )
+    if params['a']
+      Visit.create(
+        :uid => params['a'], 
+        :referrer => params['r'], 
+        :landing_page => params['l']
+      )
+    end
+
     GifImage
   end
 
